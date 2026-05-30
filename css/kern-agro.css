@@ -1,0 +1,502 @@
+/* ============================================
+   KERN AGRO - STIHL Dealer Custom Overrides
+   ============================================ */
+
+/* --- Color Variables --- */
+:root {
+  --stihl-orange: #F37A1F;
+  --stihl-orange-dark: #D96A10;
+  --stihl-charcoal: #2C2C2C;
+  --stihl-dark: #1a1a1a;
+  --stihl-light: #f5f5f5;
+  --stihl-white: #ffffff;
+  --stihl-gray: #888888;
+}
+
+/* --- Top Header Bar --- */
+.header_top {
+  background: var(--stihl-charcoal) !important;
+}
+.header_top_left p,
+.header_top_right p,
+.header_top_right a {
+  color: #ccc !important;
+}
+.header_top_left p span {
+  color: var(--stihl-orange) !important;
+}
+.header_top_right a:hover {
+  color: var(--stihl-orange) !important;
+}
+
+/* --- Logo Text --- */
+.kern-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--stihl-charcoal) !important;
+  text-decoration: none !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.kern-logo span {
+  color: var(--stihl-orange);
+}
+.kern-logo small {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: var(--stihl-gray);
+  margin-top: -2px;
+}
+
+/* --- Navigation --- */
+.nav_area {
+  background: var(--stihl-charcoal) !important;
+  border-top: 3px solid var(--stihl-orange);
+}
+.nav_center .mainmenu ul#nav > li > a {
+  color: #fff !important;
+}
+.nav_center .mainmenu ul#nav > li > a:hover,
+.nav_center .mainmenu ul#nav > li.current-page-item > a {
+  color: var(--stihl-orange) !important;
+}
+.nav_left a {
+  background: var(--stihl-orange) !important;
+  color: #fff !important;
+}
+
+/* --- Accent Colors (override pink/red) --- */
+.item-new p {
+  background: var(--stihl-orange) !important;
+}
+.item-new span {
+  background: var(--stihl-charcoal) !important;
+}
+.tr-add-cart {
+  background: rgba(243, 122, 31, 0.9) !important;
+}
+.tr-add-cart ul li a:hover {
+  color: var(--stihl-charcoal) !important;
+}
+.trending_box h2,
+.fresh_blog h2,
+.branding_box_heading h2 {
+  color: var(--stihl-charcoal) !important;
+}
+.nav .nav-tabs > li.active > a,
+.nav .nav-tabs > li.active > a:focus,
+.nav .nav-tabs > li.active > a:hover {
+  color: var(--stihl-orange) !important;
+  border-bottom-color: var(--stihl-orange) !important;
+}
+.multi_line {
+  background: var(--stihl-orange) !important;
+}
+a:hover, a:focus {
+  color: var(--stihl-orange) !important;
+}
+
+/* --- Call to Action Bar --- */
+.call_to_action {
+  border-color: var(--stihl-orange) !important;
+}
+
+/* --- Promotion Boxes --- */
+.promo_text a,
+.promo_text_bottom a {
+  color: var(--stihl-orange) !important;
+}
+.p_line {
+  background: var(--stihl-orange) !important;
+}
+
+/* --- Product Cards (catalogue mode - no cart) --- */
+.tr-add-cart ul li a.tr_cart,
+.tr-add-cart ul li a.tr_text,
+.tr-add-cart ul li a.tr_heart {
+  display: none !important;
+}
+.tr-add-cart ul li a.tr_search {
+  font-size: 20px !important;
+  padding: 10px 20px !important;
+}
+.tr-add-cart ul {
+  justify-content: center !important;
+  display: flex !important;
+  align-items: center !important;
+  height: 100%;
+}
+.item-sub h5 {
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+  letter-spacing: 0.5px;
+}
+.item-sub p {
+  color: var(--stihl-orange) !important;
+  font-weight: 700 !important;
+}
+
+/* --- View Details Button Overlay --- */
+.tr-add-cart ul li a.tr_search::after {
+  content: " View Details";
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  margin-left: 5px;
+}
+
+/* --- Product Detail Page --- */
+.old_price_gray p {
+  color: var(--stihl-orange) !important;
+}
+.product_accordion_head a {
+  color: var(--stihl-charcoal) !important;
+}
+.product_accordion_head a:hover {
+  color: var(--stihl-orange) !important;
+}
+.size_cart a {
+  background: var(--stihl-orange) !important;
+  color: #fff !important;
+  border: none !important;
+}
+.size_cart a:hover {
+  background: var(--stihl-orange-dark) !important;
+}
+#detail_star .red {
+  color: var(--stihl-orange) !important;
+}
+
+/* --- Spec Table --- */
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+.spec-table tr {
+  border-bottom: 1px solid #eee;
+}
+.spec-table td {
+  padding: 10px 15px;
+  font-size: 14px;
+}
+.spec-table td:first-child {
+  font-weight: 600;
+  color: var(--stihl-charcoal);
+  width: 40%;
+  background: #fafafa;
+}
+.spec-table td:last-child {
+  color: #555;
+}
+
+/* --- Contact for Pricing Button --- */
+.contact-pricing-btn {
+  display: inline-block;
+  background: var(--stihl-orange);
+  color: #fff !important;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 15px;
+}
+.contact-pricing-btn:hover {
+  background: var(--stihl-orange-dark);
+  color: #fff !important;
+}
+.contact-pricing-btn i {
+  margin-right: 8px;
+}
+
+/* --- Why Choose Us Section --- */
+.why-choose-section {
+  padding: 60px 0;
+  background: var(--stihl-light);
+}
+.why-choose-section h2 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--stihl-charcoal);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.why-choose-item {
+  text-align: center;
+  padding: 30px 20px;
+}
+.why-choose-item i {
+  font-size: 48px;
+  color: var(--stihl-orange);
+  margin-bottom: 20px;
+}
+.why-choose-item h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--stihl-charcoal);
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.why-choose-item p {
+  color: var(--stihl-gray);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* --- Footer --- */
+.entire_footer_area {
+  background: var(--stihl-charcoal) !important;
+}
+.footer_top_area {
+  background: var(--stihl-dark) !important;
+  border-bottom: 1px solid #444;
+}
+.footer_area {
+  background: var(--stihl-charcoal) !important;
+}
+.footer_bottom_area {
+  background: var(--stihl-dark) !important;
+}
+.single_widget h5 {
+  color: var(--stihl-orange) !important;
+}
+.wid_line {
+  background: var(--stihl-orange) !important;
+}
+.widget_nav li a {
+  color: #ccc !important;
+}
+.widget_nav li a:hover {
+  color: var(--stihl-orange) !important;
+}
+.single_widget address {
+  color: #ccc !important;
+}
+.wid_social li a {
+  color: #ccc !important;
+  border-color: #555 !important;
+}
+.wid_social li a:hover {
+  color: var(--stihl-orange) !important;
+  border-color: var(--stihl-orange) !important;
+}
+.footer_bottom p {
+  color: #999 !important;
+}
+.footer_bottom p a {
+  color: var(--stihl-orange) !important;
+}
+
+/* --- Testimonials --- */
+.testimonial_area {
+  background: var(--stihl-charcoal) !important;
+}
+.textimonial_box h2 {
+  color: #fff !important;
+}
+.textimonial_box p {
+  color: #ddd !important;
+}
+
+/* --- Slider Text --- */
+.tp-caption.large_black {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5) !important;
+}
+
+/* --- Hero CTA Button --- */
+.hero-cta {
+  display: inline-block;
+  background: var(--stihl-orange);
+  color: #fff !important;
+  padding: 14px 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: 2px solid var(--stihl-orange);
+}
+.hero-cta:hover {
+  background: transparent;
+  color: #fff !important;
+  border-color: #fff;
+}
+
+/* --- Products Grid Page --- */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+.product-card {
+  background: #fff;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.product-card:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+.product-card-img {
+  position: relative;
+  overflow: hidden;
+  background: #f9f9f9;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-card-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+.product-card:hover .product-card-img img {
+  transform: scale(1.05);
+}
+.product-card-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(243, 122, 31, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.product-card:hover .product-card-overlay {
+  opacity: 1;
+}
+.product-card-overlay a {
+  color: #fff !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  transition: all 0.3s;
+}
+.product-card-overlay a:hover {
+  background: #fff;
+  color: var(--stihl-orange) !important;
+}
+.product-card-body {
+  padding: 20px;
+  text-align: center;
+}
+.product-card-category {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--stihl-gray);
+  margin-bottom: 5px;
+}
+.product-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--stihl-charcoal);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.product-card-title a {
+  color: var(--stihl-charcoal) !important;
+  text-decoration: none;
+}
+.product-card-title a:hover {
+  color: var(--stihl-orange) !important;
+}
+.product-card-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--stihl-orange);
+}
+.product-card-price small {
+  font-size: 11px;
+  color: var(--stihl-gray);
+  font-weight: 400;
+  display: block;
+  margin-top: 3px;
+}
+
+/* --- Category Filter Buttons --- */
+.category-filters {
+  text-align: center;
+  margin: 30px 0;
+}
+.category-filters button {
+  background: none;
+  border: 2px solid #ddd;
+  padding: 8px 22px;
+  margin: 0 5px 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: var(--stihl-charcoal);
+}
+.category-filters button:hover,
+.category-filters button.active {
+  background: var(--stihl-orange);
+  border-color: var(--stihl-orange);
+  color: #fff;
+}
+
+/* --- Breadcrumb --- */
+.breadcumb li a {
+  color: #888 !important;
+}
+.breadcumb li.active a {
+  color: var(--stihl-orange) !important;
+}
+
+/* --- Contact Page --- */
+.submit_btn input[type="submit"] {
+  background: var(--stihl-orange) !important;
+  border: none !important;
+}
+.submit_btn input[type="submit"]:hover {
+  background: var(--stihl-orange-dark) !important;
+}
+
+/* --- Newsletter --- */
+.footer_top_left input[type="submit"] {
+  background: var(--stihl-orange) !important;
+}
+
+/* --- Hide cart elements globally --- */
+.nav_right,
+.header_right,
+.w_likes {
+  display: none !important;
+}
+
+/* --- Page Banner --- */
+.contact_banner_area,
+.cat_bg {
+  background-color: var(--stihl-charcoal) !important;
+}
+.contact_banner h2 {
+  color: #fff !important;
+}
